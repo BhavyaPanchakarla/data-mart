@@ -6,6 +6,7 @@ import { Search, WhitePaper } from '@carbon/icons-react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setproducts, allproducts } from '../global/ProductsSlice';
 import axios from "axios";
+import {Button} from '@carbon/react';
 
 
 
@@ -82,7 +83,7 @@ function Home() {
               className='domain-list domain-button'
               onClick={() => handleDomainSelect(domain)}
               style={{
-                backgroundColor: selectedDomains.includes(domain) ? '#3E8DE3' : '#F2F1EB',
+                backgroundColor: selectedDomains.includes(domain) ? '#9E7BB5' : '#F2F1EB',
                 
                 
               }}
@@ -92,7 +93,7 @@ function Home() {
           ))}
         </div>
       </div>
-
+      <Button>add</Button>
       <div className="products-container">
         {filteredProducts.map((product) => (
           <ProductComponent
@@ -105,7 +106,9 @@ function Home() {
             url={product.url}
             domains={product.domains}
             productStage="product"
+            
           />
+          
         ))}
       </div>
       </div>

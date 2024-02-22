@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/SignIn.scss';
 import { useState } from 'react';
-import bg_Img from '../images/background_image.jpg'
+import bg_Img from '../images/background_image.png'
 import { useDispatch } from 'react-redux';
 import { login } from '../global/AuthSlice'
 import { useCookies } from 'react-cookie';

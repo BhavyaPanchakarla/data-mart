@@ -82,7 +82,7 @@ return (
 
     <div className="products-container">
       {filteredProducts.map((product) => (
-        <ProductComponent
+         <ProductComponent
           key={product.key}
           id={product.key}
           name={product.name}

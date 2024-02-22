@@ -29,7 +29,7 @@
     transition: box-shadow 0.3s ease-in-out; /* Add transition for a smooth effect */
   }
   .product-component:hover{
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px#7B679A;
     cursor:pointer;
   }
   .product-component img {
@@ -53,7 +53,7 @@
   padding-right:8px;
   padding-top:3px;
   padding-bottom:3px;
-  color:#19191a
+  color:#1b0d44
   
   }
   input {
@@ -89,7 +89,7 @@
    }
    .head{
     font-size: 40px;
-    color:#0f0f11
+    color:#1b0d44;
    }
    
 }
